@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>EMI</title>
+<link rel="stylesheet" type="text/css" href="../principal.css">
+<link rel="stylesheet" type="text/css" href="../marcos.css">
+</head>
+<body>
+	<header>
+        <body background="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Ftecnologia&psig=AOvVaw0VgpEn37MvHnW1AcdF4EYM&ust=1721825522247000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJjH84WavYcDFQAAAAAdAAAAABAE">
+	<h1> Who are we?</h1>
+	</header>
+    <div class="navbar">
+        <a href="principal.html">Start</a>
+        <div class="subnav">
+          <button class="subnavbtn">Who are we?<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#">Strategic plan</a>
+            <a href="proyecto.html">Project</a>
+          </div>
+        </div>   
+        <a href="#soltec">Technological Solution</a>
+        <a href="#evidencia">Evidence</a>
+        <a href="../mision.html" style="float:right">Espa&ntilde;ol</a>
+    </div>
+	
+<section>
+    <div class="menu">
+        <button class="menu-button" onclick="showImage('image1')">Mission</button>
+        <button class="menu-button" onclick="showImage('image2')">Vision</button>
+        <button class="menu-button" onclick="showImage('image3')">Value</button>
+    </div>
+
+    <div class="image-container">
+        <img id="image1" class="image active" src="../mision-en.png" width="990"  height="350">
+        <img id="image2" class="image" src="../vision-en.png" width="990"  height="350">
+        <img id="image3" class="image" src="../valores-en.png"width="990"  height="350">
+    </div>
+
+
+    <script>
+        function showImage(imageId) {
+            // Ocultar todas las imágenes
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.classList.remove('active'));
+
+            
+            // Mostrar la imagen seleccionada
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.classList.add('active');
+
+            
+        }
+    </script>
+    
+    
+
+</section>
+<footer>
+	<div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="../facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../X.png" alt="X"></a>
+                <a href="#"><img src="../instagram.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 My Web site. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+        </div>
+    </footer>
+</footer>
+
+
+
+</body>
+ 
+
+</html>

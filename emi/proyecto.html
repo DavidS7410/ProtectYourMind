@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>EMI</title>
+<link rel="stylesheet" type="text/css" href="principal.css">
+<link rel="stylesheet" type="text/css" href="marcos.css">
+</head>
+<body>
+	<header>
+        <body background="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Ftecnologia&psig=AOvVaw0VgpEn37MvHnW1AcdF4EYM&ust=1721825522247000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJjH84WavYcDFQAAAAAdAAAAABAE">
+	<h1>Proyecto</h1>
+	</header>
+    <div class="navbar">
+        <a href="principal.html">Inicio</a>
+        <div class="subnav">
+          <button class="subnavbtn">Quienes somos?<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="mision.html">Plan estrat&eacute;gico</a>
+            <a href="#">Proyecto</a>
+          </div>
+        </div>   
+        <a href="#soltec">Soluci&oacute;n Tecnol&oacute;gica</a>
+        <a href="#evidencia">Evidencias</a>
+        <a href="en/mision.html" style="float:right">English</a>
+    </div>
+	
+<section>
+    <div class="menu">
+        <button class="menu-button" onclick="showIframe('iframe1')">Marco Legal</button>
+        <button class="menu-button" onclick="showIframe('iframe2')">Marco Te&oacute;rico</button>
+        <button class="menu-button" onclick="showIframe('iframe3')">Objetivos</button>
+        <button class="menu-button" onclick="showIframe('iframe4')">Cronograma</button>
+    
+    </div>
+
+    <div class="iframe-container">
+     
+        <iframe id="iframe1" class="iframe active" style="border:2px solid black;"  title="Marco Legal"   src="https://docs.google.com/document/d/1kZ7xBghrjEpJGy1e_a1EoT_tzPsY-8DT/edit?usp=sharing&ouid=111754031919806903656&rtpof=true&sd=true" width="1200" height="500"></iframe>
+        <iframe id="iframe2" class="iframe"        style="border:2px solid blue;"   title="Marco Teorico" src="https://docs.google.com/document/d/1C2aLw4tI9-6T_-3kr6TySuQcU8Lsit1J/edit?usp=sharing&ouid=111754031919806903656&rtpof=true&sd=true" width="1200" height="500"></iframe>
+        <iframe id="iframe3" class="iframe"        style="border:2px solid black;"  title="Objetivos"     src="https://docs.google.com/document/d/1u31M2nP01ibh390upOZ96rxE-pCACq6U/edit?usp=sharing&ouid=111754031919806903656&rtpof=true&sd=true" width="1200" height="500"></iframe>
+        <iframe id="iframe4" class="iframe"        style="border:2px solid blue;"   title="Cronograma"    src="https://docs.google.com/document/d/11KTpAnPa5V9P8fZn_FJYZt_FI1groFca/edit?usp=sharing&ouid=111754031919806903656&rtpof=true&sd=true" width="1200" height="500"></iframe>
+ 
+    </div>
+
+
+    <script>
+        function showIframe(iframeId) {
+            // Ocultar todas las iframes
+            const iframes = document.querySelectorAll('.iframe');
+            iframes.forEach(iframe => iframe.classList.remove('active'));
+
+            // Mostrar la iframe seleccionada
+            const selectedIframe = document.getElementById(iframeId);
+            selectedIframe.classList.add('active');
+
+        }
+    </script>
+    
+    
+
+</section>
+<footer>
+	<div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="X.png" alt="X"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados. | <a href="#">Pol&oacute;tica de Privacidad</a> | <a href="#">T&eacute;rminos y Condiciones</a></p>
+        </div>
+    </footer>
+</footer>
+
+
+
+</body>
+ 
+
+</html>
